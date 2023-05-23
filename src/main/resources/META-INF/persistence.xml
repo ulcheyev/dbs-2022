@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd"
+             version="3.0">
+    <persistence-unit name="cvut">
+
+        <class>entity.PersonEntity</class>
+        <class>entity.PhoneEntity</class>
+        <class>entity.BloodbankEntity</class>
+        <class>entity.EmployeeEntity</class>
+        <class>entity.BloodBankManagerEntity</class>
+        <class>entity.ReceptionistEntity</class>
+        <class>entity.DonorEntity</class>
+        <class>entity.PatientEntity</class>
+        <class>entity.BloodEntity</class>
+        <class>entity.BloodCompatibilityEntity</class>
+        <class>entity.HospitalEntity</class>
+        <class>entity.OrderEntity</class>
+        <class>entity.BloodTransactionEntity</class>
+
+        <properties>
+            <property
+                    name="jakarta.persistence.jdbc.url"
+                    value="ENTER URL"/>
+            <property
+                    name="jakarta.persistence.jdbc.user"
+                    value="ENTER USERNAME"/>
+            <property
+                    name="jakarta.persistence.jdbc.driver"
+                    value="org.postgresql.Driver"/>
+            <property
+                    name="jakarta.persistence.jdbc.password"
+                    value="ENTER PASSWORD"/>
+            <property
+                    name="jakarta.persistence.schema-generation.database.action"
+                    value="create"/>
+            <property name="eclipselink.id-validation" value="NONE"/>
+        </properties>
+
+    </persistence-unit>
+</persistence>
